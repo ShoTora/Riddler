@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		B7E38B5325809D2900ECF13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B5225809D2900ECF13C /* AppDelegate.swift */; };
 		B7E38B5525809D2900ECF13C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B5425809D2900ECF13C /* SceneDelegate.swift */; };
-		B7E38B5725809D2900ECF13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B5625809D2900ECF13C /* ViewController.swift */; };
+		B7E38B5725809D2900ECF13C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B5625809D2900ECF13C /* QuestionViewController.swift */; };
 		B7E38B5A25809D2A00ECF13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E38B5825809D2A00ECF13C /* Main.storyboard */; };
 		B7E38B5D25809D2A00ECF13C /* Riddler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B5B25809D2A00ECF13C /* Riddler.xcdatamodeld */; };
 		B7E38B5F25809D3800ECF13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E38B5E25809D3800ECF13C /* Assets.xcassets */; };
 		B7E38B6225809D3800ECF13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E38B6025809D3800ECF13C /* LaunchScreen.storyboard */; };
 		B7E38B6D25809D3A00ECF13C /* RiddlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B6C25809D3A00ECF13C /* RiddlerTests.swift */; };
 		B7E38B7825809D3A00ECF13C /* RiddlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B7725809D3A00ECF13C /* RiddlerUITests.swift */; };
+		B7E38B9E2580EDD200ECF13C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38B9D2580EDD200ECF13C /* Question.swift */; };
+		B7E38BA32580EE4B00ECF13C /* RiddleBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38BA22580EE4B00ECF13C /* RiddleBrain.swift */; };
+		B7E38BAE258106CD00ECF13C /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38BAD258106CD00ECF13C /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		B7E38B4F25809D2900ECF13C /* Riddler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Riddler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E38B5225809D2900ECF13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7E38B5425809D2900ECF13C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7E38B5625809D2900ECF13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7E38B5625809D2900ECF13C /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B7E38B5925809D2A00ECF13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7E38B5C25809D2A00ECF13C /* Riddler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Riddler.xcdatamodel; sourceTree = "<group>"; };
 		B7E38B5E25809D3800ECF13C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		B7E38B7325809D3A00ECF13C /* RiddlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiddlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E38B7725809D3A00ECF13C /* RiddlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddlerUITests.swift; sourceTree = "<group>"; };
 		B7E38B7925809D3A00ECF13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E38B9D2580EDD200ECF13C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B7E38BA22580EE4B00ECF13C /* RiddleBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleBrain.swift; sourceTree = "<group>"; };
+		B7E38BAD258106CD00ECF13C /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,10 @@
 			children = (
 				B7E38B5225809D2900ECF13C /* AppDelegate.swift */,
 				B7E38B5425809D2900ECF13C /* SceneDelegate.swift */,
-				B7E38B5625809D2900ECF13C /* ViewController.swift */,
+				B7E38B5625809D2900ECF13C /* QuestionViewController.swift */,
+				B7E38BAD258106CD00ECF13C /* AnswerViewController.swift */,
+				B7E38B9D2580EDD200ECF13C /* Question.swift */,
+				B7E38BA22580EE4B00ECF13C /* RiddleBrain.swift */,
 				B7E38B5825809D2A00ECF13C /* Main.storyboard */,
 				B7E38B5E25809D3800ECF13C /* Assets.xcassets */,
 				B7E38B6025809D3800ECF13C /* LaunchScreen.storyboard */,
@@ -261,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E38B5725809D2900ECF13C /* ViewController.swift in Sources */,
+				B7E38BA32580EE4B00ECF13C /* RiddleBrain.swift in Sources */,
+				B7E38BAE258106CD00ECF13C /* AnswerViewController.swift in Sources */,
+				B7E38B5725809D2900ECF13C /* QuestionViewController.swift in Sources */,
 				B7E38B5325809D2900ECF13C /* AppDelegate.swift in Sources */,
+				B7E38B9E2580EDD200ECF13C /* Question.swift in Sources */,
 				B7E38B5D25809D2A00ECF13C /* Riddler.xcdatamodeld in Sources */,
 				B7E38B5525809D2900ECF13C /* SceneDelegate.swift in Sources */,
 			);
