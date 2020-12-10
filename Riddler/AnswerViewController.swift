@@ -24,7 +24,16 @@ class AnswerViewController: UIViewController {
     }
    
     @IBAction func goNextButtonPressed(_ sender: UIButton) {
-        
         answerBrain.nextQuestion()
+        
+        performSegue(withIdentifier: "toQuestionViewController", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toQuestionViewController" {
+                let quesVC = segue.destination as! QuestionViewController
+                quesVC.questionBrain.questionNumber = answerBrain.questionNumber
+            }
+    }
+
 }

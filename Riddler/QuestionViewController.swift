@@ -13,24 +13,27 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionTextLabel: UILabel!
     @IBOutlet weak var checkAnswerButton: UIButton!
     
-    var riddleBrain = RiddleBrain()
+    var questionBrain = RiddleBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateUI()
-        
+        questionTextLabel.text = questionBrain.getQuestionText()
+
     }
 
     @IBAction func checkAnswerButtonPressed(_ sender: UIButton) {
+      
+        self.performSegue(withIdentifier: "toAnswerViewController", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toAnswerViewController" {
+                let ansVC = segue.destination as! AnswerViewController
+                ansVC.answerBrain.questionNumber = questionBrain.questionNumber
+            }
+    }
 
-    }
-    
-    
-    @objc func updateUI() {
-        questionTextLabel.text = riddleBrain.getQuestionText()
-                
-    }
     
 }
 
